@@ -2,8 +2,14 @@ import Image from 'next/image';
 import Pizza from '../../assets/pizza.png';
 const MenuItem = () => {
   return (
-    <div className="bg-gray-300 p-4 rounded-lg text-center">
-      <Image src={Pizza} alt="pizza" />
+    <div className="bg-gray-200 p-4 rounded-lg text-center group hover:bg-white transition-all hover:shadow-md hover:shadow-black/25">
+      <div className="text-center ">
+        <Image
+          className="max-h-auto max-h-24 max-w-24 mx-auto block"
+          src={Pizza}
+          alt="pizza"
+        />
+      </div>
       <h4 className="font-semibold my-2 text-xl text-black">Pepperoni Pizza</h4>
       <p className="text-gray-500 text-sm py-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
