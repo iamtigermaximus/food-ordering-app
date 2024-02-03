@@ -1,3 +1,5 @@
+import AboutSection from '@/components/layout/AboutSection';
+import ContactSection from '@/components/layout/ContactSection';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/layout/Hero';
 import HomeMenu from '@/components/layout/HomeMenu';
@@ -9,6 +11,8 @@ const Home = () => {
       <Header />
       <Hero />
       <HomeMenu />
+      <AboutSection />
+      <ContactSection />
     </>
   );
 };
