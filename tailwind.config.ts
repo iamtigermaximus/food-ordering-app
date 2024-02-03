@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,6 +10,9 @@ module.exports = {
     extend: {
       colors: {
         primary: '#f13a01',
+      },
+      fontFamily: {
+        titan: ['Titan One', 'sans-serif'],
       },
     },
   },

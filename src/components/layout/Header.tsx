@@ -4,7 +4,10 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="flex items-center justify-between">
-      <Link className="text-primary font-semibold text-2xl" href={'/'}>
+      <Link
+        className="text-primary font-titan font-semibold text-4xl"
+        href={'/'}
+      >
         SIEG PIZZA
       </Link>
       <nav className="flex items-center gap-4">
