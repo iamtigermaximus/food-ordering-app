@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
+import { NextAuthProvider } from '@/components/providers/sessionProviders';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
@@ -28,11 +29,13 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <main className="max-w-4xl mx-auto p-4 text-gray-500 font-semibold">
-          <Header />
-          {children}
-          <footer className="border-t p-8 text-center text-gray-500 mt-16">
-            &copy; 2024 All rights reserved.
-          </footer>
+          <NextAuthProvider>
+            <Header />
+            {children}
+            <footer className="border-t p-8 text-center text-gray-500 mt-16">
+              &copy; 2024 All rights reserved.
+            </footer>
+          </NextAuthProvider>
         </main>
       </body>
     </html>

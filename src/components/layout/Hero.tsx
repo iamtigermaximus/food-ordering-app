@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative ">
-        <Image src={Pizza} alt="hero-image" width={500} height={500} />
+        <Image src={Pizza} alt="hero-image" width={500} height={500} priority />
       </div>
     </section>
   );
